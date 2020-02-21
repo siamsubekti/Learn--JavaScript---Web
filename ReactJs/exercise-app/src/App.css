@@ -1,0 +1,39 @@
+.App {
+  /* text-align: center; */
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.containerheader {
+  display: flex;
+  flex-flow: row;
+  /* direction: inherit; */
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.p-react {
+  font-weight: bold;
+}
+
+.logout {
+  color: darkblue;
+}
+
+.breadcrumbs {
+  margin-top: 30px;
+}

@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  .raised-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .raised-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .raised-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  
+  .raised-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .raised-4 {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .raised-5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 10vmin;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-bottom: 5vmin;
+  }
+  
+  .App-link {
+    color: #09d3ac;
+  }
+  
+  .App section {
+    display: block;
+    margin-bottom: 5vmin;
+  }
+  
+  .AddCounter {
+    display: block;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 5vmin;
+  }
+  
+  .AddCounter button {
+    flex-grow: 1;
+    padding: 5px 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+  
+  .Card {
+    position: relative;
+    display: inline-block;
+    min-width: 200px;
+    min-height: 100px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .Card .delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    font-weight: bold;
+  }
+  
+  .Card .title {
+    margin-bottom: 5px;
+  }
+  
+  .Card .sub-title {
+    margin: 0 0 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+  }
+  
+  .Card .controls {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .button,
+  .Card .controls > button {
+    flex-grow: 1;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .Card .controls > .counter {
+    flex-grow: 2;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .avatar {
+      /* width: 20%;
+      height: 50%; */
+    padding:10px; 
+    /* margin-top: -100px;*/
+  }

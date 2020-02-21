@@ -1,0 +1,229 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "database",
+        "version": "1.0.0",
+        "title": "swagger"
+    },
+    "host": "localhost:3003",
+    "basePath": "",
+    "tags": [{
+            "name": "storage",
+            "description": "everything about storage"
+        },
+        {
+            "name": "items",
+            "description": "everything about items"
+        },
+        {
+            "name": "Warehouse",
+            "description": "everything about warehouse"
+        },
+        {
+            "name": "Manager",
+            "description": "everything about manager"
+        }
+    ],
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {
+        "/warehouse": {
+            "get": {
+                "tags": ["Warehouse"],
+                "responses": {
+                    "200": {
+                        "description": "succes",
+                        "schema": {
+                            "$ref": "#/definitions/Warehouses"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Warehouse"
+                ],
+                "summary": "Update a New Warehouse in System",
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "Warehouse That Will Be Update",
+                    "schema": {
+                        "$ref": "#definitions/Warehouses"
+                    }
+                }],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Warehouse is Updated"
+                    },
+                    "400": {
+                        "description": "Failed. Bad Warehouse's Data"
+                    },
+                    "404": {
+                        "description": "Warehouse Not found"
+                    },
+                    "405": {
+                        "description": "Validation exception"
+                    }
+                }
+            }
+        },
+        "/manager": {
+            "get": {
+                "tags": [
+                    "Manager"
+                ],
+                "summary": "Get List of Manager",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#definitions/Warehouses"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Manager"
+                ],
+                "summary": "Create a New Manager in System",
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "Manager That Will Be Created",
+                    "schema": {
+                        "$ref": "#definitions/Managers"
+                    }
+                }],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "New Manager is Created"
+                    },
+                    "400": {
+                        "description": "Failed. Bad Manager's Data"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Manager"
+                ],
+                "summary": "Update a Manager in System",
+                "parameters": [{
+                    "in": "body",
+                    "name": "body",
+                    "description": "Manager That Will Be Update",
+                    "schema": {
+                        "$ref": "#definitions/Managers"
+                    }
+                }],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Manager is Updated"
+                    },
+                    "400": {
+                        "description": "Failed. Bad Manager's Data"
+                    },
+                    "404": {
+                        "description": "Manager Not found"
+                    },
+                    "405": {
+                        "description": "Validation exception"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "id": {
+            "properties": {
+                "int": {
+                    "type": "int"
+                }
+            }
+        },
+        "Warehouse": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "address": {
+                    "type": "string"
+                }
+            }
+        },
+        "Warehouses": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Warehouse"
+            }
+        },
+        "Manager": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "warehouse_id": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "ManagerUpdate": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "phone": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "warehouse_id": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "Managers": {
+            "type": "object",
+            "properties": {
+                "managers": {
+                    "type": "object",
+                    "additionalProperties": {
+                        "$ref": "#definitions/Manager"
+                    }
+                }
+            }
+        }
+    }
+}

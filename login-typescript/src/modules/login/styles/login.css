@@ -1,0 +1,26 @@
+.gradient-background  {
+    background: radial-gradient(circle farthest-corner at center, #233d90 0,#1c262b 100%);
+}
+
+.grid {
+    height: 100vh;
+}
+
+.card {
+    width: 24vw;
+    position: relative;
+}
+
+.media {
+    height: 100%;
+    padding: 20px 15px;
+}
+
+.form-title {
+    margin-bottom: 15px !important;
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 15px !important;
+}

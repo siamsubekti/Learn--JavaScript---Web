@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  overflow: hidden;
+  margin-top: 82px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row-reverse; */
+}
+.App-header {
+  background-color: blanchedalmond;
+  /* min-height: 100vh; */
+  /* display: flex; */
+  
+  /* border: 1px solid black; */
+  /* width: 100%; */
+  /* justify-content: center;
+  /* align-items: flex-start; */
+  /* float: left;  */
+  
+  
+  font-size: calc(10px + 2vmin);
+
+}
+
+.app1 {
+ background-color: blanchedalmond;
+ /* display: inline-block; */
+ /* padding-right: px;
+ padding-left: 30px; */
+ 
+}
+
+.app2{
+  margin-top: 30px;
+  background-color: moccasin;
+  width: 100%;
+  /* width: auto; */
+  /* padding-right: 30px; */
+  /* padding-left: 470px; */
+  /* width: 200px; */
+  /* padding-left: 20px; */
+  /* margin-right: 300px; */
+  /* border: 1px solid black; */
+  color: black; 
+ 
+}
+
+.appbar {
+  background-color: #ffebcd;
+  /* padding: 14px; */
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.icon {
+  margin-bottom: 5px;
+}
+
+.error {
+  color: maroon !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+  border-color: red !important;
+}
+
+.letter{
+  color: black;
+} 
+
+/* .ahome {
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  padding-top: 34px;
+} */
+
+.home {
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-right: 10px;
+  /* border: 1px solid; */
+  /* float: left; */
+  /* display: list-item; */
+}
+
+.listinput {
+  display: inline-block;
+  padding: 40px;
+  text-align: center;
+  background-color: aqua;
+  /* margin-left: 10px; */
+}
+
+.more {
+  margin-top : 20px;
+}
+
+.delete {
+  padding: 20px;
+  /* margin-top: 90px;
+  margin-right: 60px; */
+}
+
+/* span{
+ padding: 10px; 
+} */

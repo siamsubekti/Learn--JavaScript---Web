@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document DOM</title>
+    </head>
+    <body>
+        <label id="id">ini</label>
+        <input id="name" onkeyup="tampil()"/>
+        <button onclick="">click</button>
+        <h1> Ini Tempat Pijit : <span id="haSatu"></span></h1>
+
+        
+            <label for="inputEmail" className="sr-only"> Email address
+            </label>
+            <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required autofocus />
+            <button className="btn btn-lg btn-primary btn-block" type="button"> Search
+            </button>
+        
+    </body>
+    <script>
+       function tampil() {
+            var name = document.getElementById("name").value;
+            console.log(name)
+            document.getElementById("haSatu").innerHTML = name;
+        }
+    </script>
+</html>
